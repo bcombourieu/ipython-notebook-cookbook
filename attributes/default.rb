@@ -128,8 +128,7 @@ default[:ipynb][:system_packages] = %w{
    liblcms-utils python-imaging-doc python-imaging-dbg
    libamd2.2.0 libjpeg-turbo8 libjpeg8 liblcms1 libumfpack5.4.0 python-imaging
    libpng12-0 libpng12-dev libfreetype6 libfreetype6-dev
-   libcurl4-gnutls-dev python-pycurl-dbg git-core
-   cython libhdf5-7 libhdf5-serial-dev
+   libcurl4-gnutls-dev python-pycurl-dbg git-core cython
    python-egenix-mxdatetime vim python-numpy python-scipy pandoc
 }
 
