@@ -14,8 +14,8 @@ Vagrant.configure("2") do |config|
 
   config.omnibus.chef_version = "11.6.0"
 
-  config.vm.box = "opscode-ubuntu-13.04"
-  config.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-13.04_provisionerless.box"
+  config.vm.box = "opscode-ubuntu-13.10"
+  config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-13.10_chef-provisionerless.box"
 
   # Forward the default 8888 port for the IPython notebook,
   # keeping the port different on the host box in case the user
@@ -26,7 +26,6 @@ Vagrant.configure("2") do |config|
   # Enabling the Berkshelf plugin. To enable this globally, add this configuration
   # option to your ~/.vagrant.d/Vagrantfile file
   config.berkshelf.enabled = true
-
 
   config.vm.provision :chef_solo do |chef|
 
@@ -76,7 +75,7 @@ dE3w7J7Coc46rYXAqMg05hBYrOe43nra2RHTFxQr5V+oDLMcZuPI2Ozo4e4=
 -----END CERTIFICATE-----
 eos
          # Make boot up quicker when simply testing the notebook
-         #:scientific_stack => [],
+         :scientific_stack => [],
       }
     }
 

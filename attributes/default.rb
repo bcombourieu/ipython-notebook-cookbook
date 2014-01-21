@@ -148,6 +148,7 @@ default[:ipynb][:scientific_stack] = ["numpy==1.8.0",
                                       "six==1.5.2",
                                       "scikit-learn==0.14.1",
                                       "pandas==0.12.0",
+                                      # Deal with pip 1.5 external issues, just for installing matplotlib
                                       "https://downloads.sourceforge.net/project/matplotlib/matplotlib/matplotlib-1.3.1/matplotlib-1.3.1.tar.gz",
                                       "pygments==1.6",
                                       "readline==6.2.4.1",
